@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+body {
+    width: 980px;
+    margin: 100px auto;
+}
+
+.title {
+    line-height: 48px;
+    font-size: 36px;
+    margin: 36px 0 9px 0;
+    font-weight: 600;
+}
+
+.sub-title {
+    line-height: 36px;
+    font-size: 24px;
+    margin: 24px 0 6px 0;
+    font-weight: 600;
+}
+
+.description {
+    line-height: 24px;
+    font-size: 18px;
+    margin: 18px 0;
+    padding: 0 0 0 12px;
+}
+
+.list {
+    padding : 0 0 0 24px;
+}
+
+.h {
+    display: inline;
+    color: #700;
+    font-weight: 600;
+}
