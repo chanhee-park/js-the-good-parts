@@ -1,10 +1,8 @@
 # JavaScript The Good Parts 
 더글라스 크락포드의 자바스크립트 핵심 가이드
 
-https://chanhee13p.github.io/js-the-good-parts/
 
-
-
+- - -
 # 1. 자바스크립트의 좋은 점들
 자바스크립트는 좋은 점과 나쁜 점을 갖고있다. **자바스크립트의 좋은 점을 취하고 나쁜 점을 피하면** 좋은 프로그래머가 될 수 있다.
 
@@ -19,7 +17,7 @@ https://chanhee13p.github.io/js-the-good-parts/
 - 유효 범위 등
 
 
-
+- - -
 # 2. 자바스크립트의 좋은 문법들
 자바스크립트의 좋은 점에 해당하는 문법을 살펴보자.
 
