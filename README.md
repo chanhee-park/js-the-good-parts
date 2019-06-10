@@ -166,7 +166,6 @@ someone.home && someone.home.addres     // undefined
 ### 4. 참조
 
 Call By Reference! 객체는 복사되지 않고 언제나 참조된다. 
-
 ```js
 var someone = { name: 'chanhee', age: 24 };
 var other = someone; // 값의 복사가 아니라 주소를 참조한다.
@@ -174,6 +173,26 @@ var other = someone; // 값의 복사가 아니라 주소를 참조한다.
 other.age = 25; 
 
 console.log(someone); // { name: 'chanhee', age: 25 }
+``` 
+
+객체가 값을 복사하지 않고 참조하는 것은 함수의 매게변수로 전달될 때도 마찬가지이다. 이를 주의하지 않으면 디버깅이 어려운 에러를 낳을 수 있다.
+```js
+function getNextYearInfo(human) {
+  const next = human;
+  next.age += 1;
+  // something ... 
+  return next; 
+}
+
+function test() {
+  const someone = { name: 'chanhee', age: 24 }
+  const nextYear = getNextYearInfo(someone)
+  
+  console.log(someone);    // {name: "chanhee", age: 25}
+  console.log(nextYear);   // {name: "chanhee", age: 25}
+}
+
+test();
 ``` 
 
 ### 5. 프로토타입
