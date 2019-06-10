@@ -156,10 +156,10 @@ someone.school.name      // Ajou
 
 존재하지 않는 속성을 읽으려고 하면 undefined를 반환한다. 존재하지 않는 속성을 참조하려하면 TypeError 예외가 발생한다. || 연산자나 && 연산자를 이용하여 존재하지 않는 속성에 의한 오류를 방지할 수 있다. 
 ```js
-someone.home             // undefined
-someone.home.addres      // throw TypeError
-
+someone.home                            // undefined
 var home = someone.home || '(none)';    // none
+
+someone.home.addres                     // throw TypeError
 someone.home && someone.home.addres     // undefined
 ```
 
@@ -169,11 +169,11 @@ Call By Reference! 객체는 복사되지 않고 언제나 참조된다.
 
 ```js
 var someone = { name: 'chanhee', age: 24 };
-var other = someone;    // 값의 복사가 아니라 주소를 참조한다.
+var other = someone; // 값의 복사가 아니라 주소를 참조한다.
 
 other.age = 25; 
 
-console.log(someone);    // { name: 'chanhee', age: 25 }
+console.log(someone); // { name: 'chanhee', age: 25 }
 ``` 
 
 ### 5. 프로토타입
